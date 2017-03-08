@@ -33,6 +33,8 @@
 
     <bean id="redisString" class="com.bins.common.redis.service.impl.RedisStringImpl"></bean>
 
+    <bean id="distributedLock" class="com.bins.common.redis.lock.DistributedLock"></bean>
+
     <!--
     <bean id="shardedJedisPool" class="redis.clients.jedis.JedisPool">
         <constructor-arg index="0" ref="jedisPoolConfig"/>
